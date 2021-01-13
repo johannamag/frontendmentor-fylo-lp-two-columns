@@ -299,3 +299,30 @@ h3 {
     margin-top: 30px;
   }
 }
+
+/* Access Section */
+
+.access {
+  background-color: var(--blue);
+  color: #fff;
+}
+
+.access .container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.form .access-form {
+  width: 100%;
+}
+
+.access-email {
+  width: 100%;
+  margin-bottom: 10px;
+  margin-right: 0;
+}
+
+.access-btn {
+  width: 40%;
+  box-shadow: initial;
+}
