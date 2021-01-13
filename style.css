@@ -190,3 +190,27 @@ h3 {
   color: red;
   opacity: 0;
 }
+
+@media screen and (max-width: 729px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+  .hero-img {
+    grid-row: 1 / 2;
+  }
+}
+
+@media screen and (max-width: 495px) {
+  #email {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .form-btn {
+    width: 100%;
+  }
+  .heading {
+    font-size: 1.8rem;
+    line-height: 35px;
+  }
+}
