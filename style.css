@@ -312,17 +312,25 @@ h3 {
   padding-bottom: 100px;
 }
 
-.form .access-form {
-  width: 100%;
-}
-
 .access-email {
   width: 100%;
-  margin-bottom: 10px;
-  margin-right: 0;
+  padding: 10px;
+  border: 1px solid var(--gray);
+  outline-color: var(--cyan);
+  border-radius: 2px;
+  margin-bottom: 15px;
 }
 
 .access-btn {
   width: 40%;
   box-shadow: initial;
+}
+
+@media screen and (max-width: 729px) {
+  .access-email {
+    width: 100%;
+  }
+  .access-btn {
+    width: 100%;
+  }
 }
