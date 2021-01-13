@@ -28,3 +28,58 @@ h3 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
 }
+
+.container {
+  max-width: 1250px;
+  width: 100%;
+  padding: 30px 20px;
+  margin: 0 auto;
+}
+
+/* Navbar */
+
+.header {
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100px;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item {
+  margin-right: 40px;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--dark-blue);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: var(--light-blue);
+  border-bottom: 1px solid var(--light-blue);
+}
