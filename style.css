@@ -210,6 +210,9 @@ h3 {
   .hero-img {
     grid-row: 1 / 2;
   }
+  .hero {
+    background-image: url("./media/bg-curve-mobile.svg");
+  }
 }
 
 @media screen and (max-width: 495px) {
