@@ -127,3 +127,66 @@ h3 {
     font-size: 1.1rem;
   }
 }
+
+/* Hero Section */
+
+.hero {
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.heading {
+  font-size: 2.2rem;
+  line-height: 55px;
+  margin-bottom: 15px;
+}
+
+.desc {
+  margin-bottom: 15px;
+}
+
+#email {
+  width: 60%;
+  padding: 10px;
+  margin-right: 5px;
+  border: 1px solid var(--gray);
+  outline-color: var(--cyan);
+  border-radius: 2px;
+}
+
+.form-btn {
+  width: 35%;
+  padding: 10px;
+  background-color: var(--light-blue);
+  border: 1px solid var(--light-blue);
+  color: #fff;
+  border-radius: 2px;
+  cursor: pointer;
+  box-shadow: 0px 4px 5px var(--gray);
+  transition: all 0.3s ease-in-out;
+}
+
+.form-btn:hover {
+  opacity: 0.7;
+}
+
+.error#email {
+  border: 1px solid red;
+}
+
+.error-message {
+  font-size: 0.8rem;
+  color: red;
+  opacity: 0;
+}
