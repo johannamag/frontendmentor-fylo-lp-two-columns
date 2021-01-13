@@ -425,3 +425,25 @@ h3 {
 .attribution > a:hover {
   color: var(--cyan);
 }
+
+@media screen and (max-width: 735px) {
+  .footer-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .socials {
+    margin: 0 auto;
+    grid-column: 1 / 4;
+  }
+}
+
+@media screen and (max-width: 519px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .contacts {
+    grid-column: 1 / 4;
+  }
+  .footer-links {
+    grid-column: 1 / 4;
+  }
+}
