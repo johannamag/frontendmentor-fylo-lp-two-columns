@@ -44,6 +44,7 @@ h3 {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1500;
 }
 
 .nav {
@@ -54,6 +55,7 @@ h3 {
 
 .logo {
   width: 100px;
+  z-index: 1500;
 }
 
 .mobile-nav {
@@ -82,4 +84,46 @@ h3 {
 .nav-link:hover {
   color: var(--light-blue);
   border-bottom: 1px solid var(--light-blue);
+}
+
+@media screen and (max-width: 545px) {
+  .mobile-nav {
+    display: block;
+    z-index: 1500;
+  }
+  .fa-minus {
+    display: none;
+  }
+  .open.fa-plus {
+    display: none;
+  }
+  .open.fa-minus {
+    display: block;
+  }
+  .nav-items {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 60vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--blue);
+    padding-top: 70px;
+    opacity: 0;
+    z-index: 1400;
+    transition: all 0.3s ease-in-out;
+  }
+  .open.nav-items {
+    opacity: 1;
+  }
+  .nav-item {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .nav-link {
+    color: #fff;
+    font-size: 1.1rem;
+  }
 }
